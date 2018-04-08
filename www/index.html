@@ -1,59 +1,77 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>RegisterUser - Demo</title>
-        <link rel="stylesheet" type="text/css" href="css/styles.css">
-        <!--Import Google Icon Font-->
-	    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	    <!--Import materialize.css-->
-	    <!-- <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/> -->
-    </head>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1,
+width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <title>RegisterUser - Demo</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+
+  </head>
     <body>
-    	<main>
-    		<div class="logo">
-	            <img src="img/logo-br.png" alt="">
-	        </div>
-	    	<h2 class="view-title">Have we met before?</h2>
-	        <div class="login-box">
-	            <div id="container-login">
-	                <label for="email-login">email</label>
-	                <input id="email-login" type="email" placeholder="Email Address">
-	                <label for="password-login">password</label>
-	                <input id="password-login" type="password" placeholder="Password">
-	                <div id="submit-login">
-	                    LOG IN
-	                </div>
-	            </div>
-	            <div class="container-signup">
-	                <label for="name-register">name</label>
-	                <input id="name-register" type="text" placeholder="Name">
-	                <label for="email-register">email</label>
-	                <input id="email-register" type="email" placeholder="Email">
-	                <label for="password-register">password</label>
-	                <input id="password-register" type="password" placeholder="password">
-	                <div id="submit-register">
-	                    SIGN UP
-	                </div>
-	            </div>
-	            <div class="sign-wrap">
-		            <div class="sign-up">
-		                <div id="link-signup">I don't have an account!</div>
-		            </div>
-		            <div class="sign-in">
-		                <div id="link-signin">Sign In</div>
-		            </div>
-		        </div>
-	        </div>
-	    </main>
-	    </body>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-	    <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
-	    <script defer src="/__/firebase/4.11.0/firebase-auth.js"></script>
-	    <script defer src="/__/firebase/4.11.0/firebase-database.js"></script>
-	    <script type="text/javascript" src="js/register.js"></script>
-	    <script type="text/javascript" src="js/anim.js"></script>
+    <main>
+        <div class="logo">
+            <img src="img/logo-br.png" alt="">
+        </div>
+        <h2 class="view-title">Have we met before?</h2>
+        <div class="login-box">
+            <div id="container-login">
+                <label for="email-login">email</label>
+                <input id="email-login" type="email" placeholder="Email Address">
+                <label for="password-login">password</label>
+                <input id="password-login" type="password" placeholder="Password">
+                <div id="submit-login">
+                    LOG IN
+                </div>
+            </div>
+            <!-- <div id="container-logout">
+                <p id="status-user"></p>
+                <button id="submit-logout">Log out</button>
+            </div> -->
+            <div class="container-signup">
+                <!-- <h1>Sign up</h1> -->
+                <label for="name-register">name</label>
+                <input id="name-register" type="text" placeholder="Name">
+                <label for="email-register">email</label>
+                <input id="email-register" type="email" placeholder="Email">
+                <label for="password-register">password</label>
+                <input id="password-register" type="password" placeholder="password">
+                <div id="submit-register">
+                    SIGN UP
+                </div>
+                <!-- <img id="submit-register" src="img/register.png" alt=""> -->
+                <!-- <button id="submit-register">Register</button> -->
+            </div>
+        </div>
+        <div class="sign-wrap">
+            <div class="sign-up">
+                <div id="link-signup">I don't have an account!</div>
+            </div>
+            <div class="sign-in">
+                <div id="link-signin">Sign In</div>
+            </div>
+        </div>
+        <!-- <div>
+                <button id="mypage"><a href="/mypage.html">Go to my page</a></button>
+            </div> -->
+    </main>
+    </body>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+    <script defer src="/__/firebase/4.11.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/4.11.0/firebase-database.js"></script>
+    <script type="text/javascript" src="js/register.js"></script>
+    <script type="text/javascript" src="js/anim.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+    <!-- <script src="/js/mypage.js"></script>   -->
+    <!-- <script src="/js/loginout.js"></script> -->
 </html>
