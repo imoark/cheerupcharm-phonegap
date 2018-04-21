@@ -13,7 +13,9 @@ function getDOMElements() {
       "playalt": document.getElementById("play-alt"),
       "viewalt": document.getElementById("view-alt"),
       "closebutton": document.getElementById("close-button-all"),
-      "closebuttonplay": document.getElementById("close-button-play")
+      "closebuttonChat": document.getElementById("close-button-chat"),
+      "closebuttonplay": document.getElementById("close-button-play"),
+      "closebuttonview": document.getElementById("close-button-view")
     };
 }
 
@@ -31,7 +33,7 @@ donut.postalt.addEventListener("click", uploadstuff, false);
 
 function uploadstuff(){
   console.log("uploadButton Is Clicked");
-  $(".botui-app-container").addClass("hidden");
+  $(".chatbot-wrapper").addClass("hidden");
   $("#entrybox-wrapper").removeClass("hidden");
   $("#intro-wrapper").addClass("hidden");
   $(".view-title").addClass("hidden");
@@ -50,10 +52,13 @@ function uploadstuff(){
 donut.homeButton.addEventListener("click", goHome, false);
 donut.closebutton.addEventListener("click", goHome, false);
 donut.closebuttonplay.addEventListener("click", goHome, false);
+donut.closebuttonChat.addEventListener("click", goHome, false);
+donut.closebuttonview.addEventListener("click", goHome, false);
 
 
 function goHome(){
-  $(".botui-app-container").addClass("hidden");
+  console.log("goHome() Is running");
+  $(".chatbot-wrapper").addClass("hidden");
   $("#play-menu").addClass("hidden");
   $("#entrybox-wrapper").addClass("hidden");
   $("#intro-wrapper").removeClass("hidden");
@@ -70,7 +75,7 @@ donut.chatalt.addEventListener("click", chatstuff, false);
 
 function chatstuff(){
   console.log("chatButton Is Clicked");
-  $(".botui-app-container").removeClass("hidden");
+  $(".chatbot-wrapper").removeClass("hidden");
   $("#entrybox-wrapper").addClass("hidden");
   $("#intro-wrapper").addClass("hidden");
   $(".view-title").addClass("hidden");

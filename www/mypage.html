@@ -17,13 +17,19 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/botui/build/botui.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/botui/build/botui-theme-default.css" />
     <!-- jQueryUI -->
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css">
 </head>
 
 <body class="mypage">
     <main>
-        <div class="botui-app-container hidden" id="chat">
-            <bot-ui></bot-ui>
+        <div class="chatbot-wrapper hidden">
+            <div id="close-button-chat">
+                <img src="img/xbut.png" alt="">
+            </div>
+            <div class="botui-app-container " id="chat">
+                
+                <bot-ui></bot-ui>
+            </div>
         </div>
         <div class="main-wrapper">
             <div class="logopage">
@@ -150,9 +156,14 @@
         </div><!-- end of .play-wrapper -->
     </div>
     <div class="displaylog-container">
+        <div id="close-button-view">
+            <img src="img/xbut.png" alt="">
+        </div>
         <div id="displaylogdis">
         </div>
     </div>
+</body>
+    <script type="text/javascript" src="cordova.js"></script>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="https://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
