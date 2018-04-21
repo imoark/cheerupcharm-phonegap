@@ -95,12 +95,12 @@
     // Initialize Firebase
     function initializeApp(){
         var config = {
-          apiKey: "AIzaSyB54gHFoCICkOQZ-lcdc1m1jVi-EW3NNOc",
-          authDomain: "charmupapp.firebaseapp.com",
-          databaseURL: "https://charmupapp.firebaseio.com",
-          projectId: "charmupapp",
-          storageBucket: "charmupapp.appspot.com",
-          messagingSenderId: "263698113549"
-          };
+          apiKey: "AIzaSyClwKM2XAzxWczot4RnFcqlA4G4klfVLLQ",
+          authDomain: "cheerupcharm-18dbe.firebaseapp.com",
+          databaseURL: "https://cheerupcharm-18dbe.firebaseio.com",
+          projectId: "cheerupcharm-18dbe",
+          storageBucket: "cheerupcharm-18dbe.appspot.com",
+          messagingSenderId: "868086547783"
+        };
         firebase.initializeApp(config);
     }

@@ -1,63 +1,20 @@
-# Hello World PhoneGap Template [![bitHound Score][bithound-img]][bithound-url]
+# PhoneGap CheerUpCharm [![Build status](https://ci.appveyor.com/api/projects/status/4yq7ij035ya3g5bq/branch/master?svg=true)](https://ci.appveyor.com/project/stevengill/phonegap-cli/branch/master) [![bitHound Score][bithound-img]][bithound-url] [![codecov](https://codecov.io/gh/phonegap/phonegap-cli/branch/master/graph/badge.svg)](https://codecov.io/gh/phonegap/phonegap-cli)
 
-A PhoneGap Hello World template
+An Android Version of CheerUpCharm
 
 ## Usage
 
-#### PhoneGap CLI
+#### PhoneGap Desktop
 
-The hello-world template is the default when you create a new application using the [phonegap-cli][phonegap-cli-url].
+While you are running on Windows OS, please download the [PhoneGap Desktop App][phonegap-cli-url].
 
-    phonegap create my-app
+    PhoneGapSetup-win32.exe
 
-Create an app using this template specifically:
-
-    phonegap create my-app --template hello-world
-
-To see a list of other available PhoneGap templates:
-
-    phonegap template list
-
-## [config.xml][config-xml]
-
-#### android-minSdkVersion (Android only)
-
-Minimum SDK version supported on the target device. Maximum version is blank by default.
-
-This template sets the minimum to `14`.
-
-    <preference name="android-minSdkVersion" value="14" />
-
-#### &lt;access ...&gt; (All)
-
-This template defaults to wide open access.
-
-    <access origin="*" />
-
-It is strongly encouraged that you restrict access to external resources in your application before releasing to production.
-
-For more information on whitelist configuration, see the [Cordova Whitelist Guide][cordova-whitelist-guide] and the [Cordova Whitelist Plugin documentation][cordova-plugin-whitelist]
-
-## [www/index.html][index-html]
-
-#### Content Security Policy (CSP)
-
-The default CSP is similarly open:
-
-    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
-
-Much like the access tag above, you are strongly encouraged to use a more restrictive CSP in production.
-
-A good starting point declaration might be:
-
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" />
-
-For more information on the Content Security Policy, see the [section on CSP in the Cordova Whitelist Plugin documentation][cordova-plugin-whitelist-csp].
-
-Another good resource for generating a good CSP declaration is [CSP is Awesome][csp-is-awesome]
+Open the [PhoneGap Desktop App][phonegap-cli-url] and click the "+" button.
+Choose `"Open existing PhoneGap project..."` and choose this git clone repository on your local.
 
 
-[phonegap-cli-url]: http://github.com/phonegap/phonegap-cli
+[phonegap-cli-url]: https://github.com/phonegap/phonegap-app-desktop/releases/download/0.4.5/PhoneGapSetup-win32.exe
 [cordova-app]: http://github.com/apache/cordova-app-hello-world
 [bithound-img]: https://www.bithound.io/github/phonegap/phonegap-app-hello-world/badges/score.svg
 [bithound-url]: https://www.bithound.io/github/phonegap/phonegap-app-hello-world
